@@ -9,7 +9,7 @@ Add to your flake inputs and modules:
 {
   inputs = {
     tum-cit-followme = {
-      url = "path:flakes/tum-cit-followme";
+      url = "github:birneee/tum-cit-followme-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
