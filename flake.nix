@@ -63,7 +63,7 @@
             in
             lib.mkIf cfg.enable {
               services.printing.drivers = [
-                self.packages.${pkgs.system}.default
+                self.packages.${pkgs.stdenv.hostPlatform.system}.default
               ];
               hardware.printers.ensurePrinters = [
                 {
